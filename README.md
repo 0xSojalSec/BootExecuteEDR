@@ -17,5 +17,13 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager" /v "BootExecute"
 ```
 
 ```cmd
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager" /v "BootExecuteNoPnpSync" /t REG_MULTI_SZ /d "BEB" /f
+```
+
+```cmd
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager" /v "SetupExecute" /t REG_MULTI_SZ /d "BEB" /f
+```
+
+```cmd
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager" /v "PlatformExecute" /t REG_MULTI_SZ /d "BEB" /f
 ```
